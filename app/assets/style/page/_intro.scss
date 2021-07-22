@@ -1,0 +1,38 @@
+.intro {
+    background: #AA06010D;
+    padding-top: 60px;
+    h2 {
+      text-align: center;
+      font-size: $font-2;
+      font-weight: bold;
+      color: $color2;
+      margin-bottom: 48.08px;
+    }
+    ul {
+      justify-content: space-evenly;
+      li {
+        width: 255px;
+        text-align: center;
+        div {
+          height: 84px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 24px;
+          img {
+            width: 84px;
+          }
+        }
+        span {
+          font-size: 24px;
+          color: $color2;
+          font-weight: bold;
+          margin-bottom: 8px;
+        }
+        p {
+          text-align: left;
+          margin-bottom: 80px;
+        }
+      }
+    }
+  }

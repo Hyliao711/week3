@@ -1,0 +1,136 @@
+.header {
+  height: auto;
+  background-color: $color;
+  .top-bar {
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1744px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @include pad(){
+      max-width: 690px;
+    }
+    .logo a {
+      display: block;
+      width: 80px;
+      height: 48.57px;
+      background: url(../images/logo.png);
+      text-indent: 101%;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .menu {
+      justify-content: space-between;
+      li {
+        margin-left: 64px;
+      }
+      li a {
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 1.5;
+        color: #fff;
+      }
+      li a:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+
+.footer {
+  padding-top: 32px;
+  padding-bottom: 39px;
+  background-color: $color;
+  @include pad(){
+    padding-top: 32px;
+    padding-bottom: 21px;
+  }
+  a, p {
+    text-decoration: none;
+    color: #fff;
+  }
+  .head-footer, .end-footer {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .head-footer {
+    margin-bottom: 24px;
+    @include pad(){
+      margin-bottom: 18px;
+    }
+    .foot-menu {
+      li {
+        margin-right: 48px;
+        @include pad(){
+        }
+      }
+      li:hover {
+        border-bottom: 1px solid #fff;
+      }
+    }
+    .foot-icon {
+      li {
+        margin-left: 32px;
+        @include pad(){
+          width: 24px;
+          height: 24px;
+          margin-left: 24px;
+        }
+      }
+      li:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+  .mid-footer {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 32px;
+    @include pad(){
+      margin-bottom: 24px;
+    }
+    .flex {
+      align-items: center;
+    }
+    a {
+      margin-bottom: 16px;
+      width: 400px;
+      @include pad(){
+        margin-bottom: 12px;
+      }
+      img {
+        width: 40px;
+        margin-right: 20px;
+        @include pad(){
+          width: 20px;
+          margin-right: 10px;
+        }
+      }
+      p {
+        font-size: 36px;
+        @include pad(){
+          font-size: 20px;
+        }
+      }
+    }
+    a:hover {
+      opacity: 0.7;
+    }
+  }
+  .end-footer {
+    .service {
+      a {
+        font-size: 14px;
+        margin-left: 48px;
+        @include pad(){
+          margin-left: 24px;
+        }
+      }
+      a:hover {
+        opacity: 0.7 ;
+      }
+    }
+  }
+}  

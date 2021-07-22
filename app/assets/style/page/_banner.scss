@@ -1,0 +1,16 @@
+.banner {
+    background: url(../images/banner.png);
+    height: 840px;
+    padding-top: 348px;
+    .banner-text {
+      text-align: right;
+      color: $color2;
+      h2 {
+        font-size: $font-3;
+      }
+      span {
+        font-size: 64px;
+        font-weight: bold;
+      }
+    }
+  }

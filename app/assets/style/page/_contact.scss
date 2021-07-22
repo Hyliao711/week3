@@ -1,0 +1,55 @@
+.contact {
+    background-color: #AA06010D;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    h2 {
+      text-align: center;
+      font-size: $font-2;
+      font-weight: bold;
+      color: #000;
+      margin-bottom: 24px;
+    }
+    .container {
+      width: 730px;
+    }
+    .form {
+      .form-intro {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+    }
+    label {
+      margin-bottom: 4px;
+    }
+    .addbox, .comment {
+      width: 100%;
+      margin-bottom: 16px;
+      border: 1px solid #000;
+      padding: 12px 16px;
+      background-color: transparent;
+      font-size: 16px;
+    }
+    .flex {
+      align-items: center;
+      margin-bottom: 40px;
+      .check {
+        width: 20px;
+        height: 20px;
+        margin-right: 4px;
+      }
+    }
+    .btn-submit {
+      display: block;
+      padding: 16px;
+      padding-left: 143px;
+      padding-right: 143px;
+      margin: 0 auto;
+      font-size: 16px;
+      color:#fff;
+      background-color: $color;
+      border: 0;
+    }
+    .btn-submit:hover {
+      background-color: $color2;
+    }
+  }
