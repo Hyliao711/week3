@@ -1,15 +1,26 @@
 .intro {
     background: #AA06010D;
     padding-top: 60px;
+    @include pad(){
+      padding-top: 40px;
+    }
     h2 {
       text-align: center;
       font-size: $font-2;
       font-weight: bold;
       color: $color2;
       margin-bottom: 48.08px;
+      @include pad(){
+        margin-bottom: 32px;
+        font-size: $font-1*2;
+      }
     }
     ul {
       justify-content: space-evenly;
+      @include pad(){
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
       li {
         width: 255px;
         text-align: center;
@@ -32,6 +43,9 @@
         p {
           text-align: left;
           margin-bottom: 80px;
+          @include pad(){
+            margin-bottom: 56px;
+          }
         }
       }
     }

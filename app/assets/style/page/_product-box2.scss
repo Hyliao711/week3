@@ -5,12 +5,20 @@
     background-size: cover;
     height: 705px;
     padding-top: 60px;
+    @include pad(){
+      height: 452px;
+      padding-top: 40px;
+    }
     h2 {
       text-align: center;
       font-size: $font-2;
       font-weight: bold;
       color: #fff;
       margin-bottom: 40px;
+      @include pad(){
+        margin-bottom: 32px;
+        font-size: $font-1*2;
+      }
     }
     ul {
       justify-content: space-between;
@@ -62,5 +70,26 @@
           background-color: rgba(255, 255, 255, 0);
         }
       }
+    }
+  }
+
+  .product-box2 ul .p-box2, .product-box2 ul .p-box1 {
+    @include pad(){
+      width: 330px;
+      height: 278px;
+      background-size: cover;
+    }
+  }
+  .product-box2 ul .p-box2 a, .product-box2 ul .p-box1 a {
+    @include pad(){
+      width: 330px;
+      height: 278px;
+      padding-top: 117.5px;
+    }
+  }
+
+  .product-box2 ul .p-box2 a p, .product-box2 ul .p-box1 a p {
+    @include pad(){
+      font-size: 32px;
     }
   }

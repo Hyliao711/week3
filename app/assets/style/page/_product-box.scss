@@ -1,25 +1,42 @@
 .product-box {
     padding-top: 60px;
     margin-bottom: 80px;
+    @include pad(){
+      padding-top: 40px;
+      margin-bottom: 48px;
+    }
     h2 {
       text-align: center;
       font-size: $font-2;
       font-weight: bold;
       color: $color2;
       margin-bottom: 40px;
+      @include pad(){
+        margin-bottom: 32px;
+        font-size: $font-1*2;
+      }
     }
     .list {
       align-items: center;
       margin-bottom: 32px;
       text-decoration: none;
+      @include pad(){
+        margin-bottom: 8px;
+      }
       img {
         width: 57%;
+        @include pad(){
+          width: 56.5%;
+        }
       }
       span {
         font-size: 48px;
         font-weight: bold;
         color: $color;
         font-style: italic;
+        @include pad(){
+          font-size: 28px;
+        }
       }
       span::before {
         content: '';
@@ -33,6 +50,10 @@
         margin-right: 10px;
         margin-left: 32px;
         vertical-align: -5%;
+        @include pad(){
+          width: 37px;
+          height: 37px;
+        }
       }
     }
     .list:hover {
@@ -40,9 +61,17 @@
        opacity: 0.7;     
       }
     }
+    .reverse {
+      @include pad(){
+        flex-direction: row;
+      }
+    }
     .product2 {
       span {
         margin-right: 30px;
+        @include pad(){
+          font-size: 28px;
+        }
       }
       span::before {
         content: '';
@@ -55,9 +84,18 @@
         height: 44px;
         margin-right: 10px;
         margin-left: 32px;
+        @include pad(){
+          width: 37px;
+          height: 37px;
+        }
       }
     }
     .product3 {
+      span {
+        @include pad(){
+          font-size: 28px;
+        }
+      }
       span::before {
         content: '';
         display: inline-block;
@@ -69,6 +107,10 @@
         height: 44px;
         margin-right: 10px;
         margin-left: 32px;
+        @include pad(){
+          width: 37px;
+          height: 37px;
+        }
       }
     }
   }

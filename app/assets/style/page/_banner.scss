@@ -2,15 +2,28 @@
     background: url(../images/banner.png);
     height: 840px;
     padding-top: 348px;
+    @include pad(){
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding-top: 372px;
+    }
     .banner-text {
       text-align: right;
       color: $color2;
       h2 {
         font-size: $font-3;
+        @include pad(){
+          font-size: 20px;
+          font-weight: bold;
+        }
       }
       span {
         font-size: 64px;
         font-weight: bold;
+        @include pad(){
+          font-size: 48px;
+        }
       }
     }
   }
