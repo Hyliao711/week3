@@ -8,14 +8,23 @@
       background-repeat: no-repeat;
       padding-top: 372px;
     }
+    @include phone(){
+      height: 394px;
+      background-size: cover;
+      padding-top: 164px;
+    }
     .banner-text {
       text-align: right;
       color: $color2;
+      padding-right: 15px;
       h2 {
         font-size: $font-3;
         @include pad(){
           font-size: 20px;
           font-weight: bold;
+        }
+        @include phone(){
+          font-size: $font-1;
         }
       }
       span {
@@ -23,6 +32,9 @@
         font-weight: bold;
         @include pad(){
           font-size: 48px;
+        }
+        @include phone(){
+          font-size: $font-1*2;
         }
       }
     }

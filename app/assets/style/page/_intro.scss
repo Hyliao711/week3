@@ -4,6 +4,9 @@
     @include pad(){
       padding-top: 40px;
     }
+    @include phone(){
+      padding-top: 32px;
+    }
     h2 {
       text-align: center;
       font-size: $font-2;
@@ -13,6 +16,11 @@
       @include pad(){
         margin-bottom: 32px;
         font-size: $font-1*2;
+      }
+      @include phone(){
+        margin-bottom: 28px;
+        font-size: 24px;
+        line-height: 2;
       }
     }
     ul {
@@ -45,6 +53,9 @@
           margin-bottom: 80px;
           @include pad(){
             margin-bottom: 56px;
+          }
+          @include phone(){
+            margin-bottom: 40px;
           }
         }
       }

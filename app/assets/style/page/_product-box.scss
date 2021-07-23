@@ -5,6 +5,10 @@
       padding-top: 40px;
       margin-bottom: 48px;
     }
+    @include phone(){
+      padding-top: 32px;
+      margin-bottom: 40px;
+    }
     h2 {
       text-align: center;
       font-size: $font-2;
@@ -15,6 +19,11 @@
         margin-bottom: 32px;
         font-size: $font-1*2;
       }
+      @include phone(){
+        font-size: 20px;
+        line-height: 48px;
+        margin-bottom: 20px;
+      }
     }
     .list {
       align-items: center;
@@ -23,10 +32,16 @@
       @include pad(){
         margin-bottom: 8px;
       }
+      @include phone(){
+        position: relative;
+      }
       img {
         width: 57%;
         @include pad(){
           width: 56.5%;
+        }
+        @include phone(){
+          width: 100%;
         }
       }
       span {
@@ -36,6 +51,11 @@
         font-style: italic;
         @include pad(){
           font-size: 28px;
+        }
+        @include phone(){
+          position: absolute;
+          width: 345px;
+          text-align: center;
         }
       }
       span::before {
@@ -53,6 +73,9 @@
         @include pad(){
           width: 37px;
           height: 37px;
+        }
+        @include phone(){
+          margin-left: 0px;
         }
       }
     }
@@ -88,6 +111,9 @@
           width: 37px;
           height: 37px;
         }
+        @include phone(){
+          margin-left: 0px;
+        }
       }
     }
     .product3 {
@@ -110,6 +136,9 @@
         @include pad(){
           width: 37px;
           height: 37px;
+        }
+        @include phone(){
+          margin-left: 0px;
         }
       }
     }

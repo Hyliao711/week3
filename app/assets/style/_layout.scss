@@ -11,6 +11,18 @@
     @include pad(){
       max-width: 690px;
     }
+    @include phone(){
+      max-width: 375px;
+      padding: 0;
+      flex-direction: column;
+    }
+    h1 {
+      @include phone(){
+        display: block;
+        width: 100%;
+        padding: 10px 164px;
+      }
+    }
     .logo a {
       display: block;
       width: 80px;
@@ -19,17 +31,33 @@
       text-indent: 101%;
       white-space: nowrap;
       overflow: hidden;
+      @include phone(){
+        width: 48px;
+        height: 29px;
+        background-size: cover;
+      }
     }
     .menu {
       justify-content: space-between;
+      flex-wrap: wrap;
       li {
         margin-left: 64px;
+        @include phone(){
+          width: 50%;
+          margin: 0 auto;
+          text-align: center;
+          padding: 8px 48px;
+          border: 1px solid #fff;
+        }
       }
       li a {
         text-decoration: none;
         font-size: 20px;
         line-height: 1.5;
         color: #fff;
+        @include phone(){
+          line-height: 29px;
+        }
       }
       li a:hover {
         opacity: 0.7;
@@ -47,6 +75,16 @@
     padding-top: 32px;
     padding-bottom: 21px;
   }
+  @include phone(){
+    padding: 0px 15px;
+    padding-top: 24px;
+    padding-bottom: 16px;
+  }
+  .container {
+    @include phone(){
+      position: relative;
+    }
+  }
   a, p {
     text-decoration: none;
     color: #fff;
@@ -57,10 +95,18 @@
   }
   .head-footer {
     margin-bottom: 24px;
+    justify-content: space-between;
     @include pad(){
       margin-bottom: 18px;
     }
+    @include phone(){
+      position: absolute;
+      right: 0px;
+    }
     .foot-menu {
+      @include phone(){
+        display: none;
+      }
       li {
         margin-right: 48px;
         @include pad(){
@@ -91,6 +137,10 @@
     @include pad(){
       margin-bottom: 24px;
     }
+    @include phone(){
+      padding-bottom: 24px;
+      margin-bottom: 16px;
+    }
     .flex {
       align-items: center;
     }
@@ -100,6 +150,9 @@
       @include pad(){
         margin-bottom: 12px;
       }
+      @include phone(){
+        margin-bottom: 6px;
+      }
       img {
         width: 40px;
         margin-right: 20px;
@@ -107,11 +160,18 @@
           width: 20px;
           margin-right: 10px;
         }
+        @include phone(){
+          width: 15px;
+        }
       }
       p {
         font-size: 36px;
         @include pad(){
           font-size: 20px;
+        }
+        @include phone(){
+          font-size: $font-1;
+          line-height: 21px;
         }
       }
     }
@@ -120,12 +180,28 @@
     }
   }
   .end-footer {
+    @include phone(){
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    p {
+      @include phone(){
+        margin-bottom: 8px;
+      }
+    }
     .service {
+      @include phone(){
+        flex-direction: column;
+      }
       a {
         font-size: 14px;
         margin-left: 48px;
         @include pad(){
           margin-left: 24px;
+        }
+        @include phone(){
+          margin: 0;
+          margin-bottom: 8px;
         }
       }
       a:hover {

@@ -9,6 +9,11 @@
       height: 452px;
       padding-top: 40px;
     }
+    @include phone(){
+      height: 719px;
+      padding-top: 32px;
+      padding-bottom: 40px;
+    }
     h2 {
       text-align: center;
       font-size: $font-2;
@@ -19,11 +24,23 @@
         margin-bottom: 32px;
         font-size: $font-1*2;
       }
+      @include phone(){
+        font-size: 20px;
+        line-height: 48px;
+        margin-bottom: 20px;
+      }
     }
     ul {
       justify-content: space-between;
+      @include phone(){
+        justify-content: center;
+        flex-wrap: wrap;
+      }
       .p-box1 {
         background-image: url(../images/product-8.png);
+        @include phone(){
+          margin-bottom: 16px;
+        }
         a {
           display: block;
           background-color: rgba(255, 255, 255, 0.5);
@@ -34,6 +51,8 @@
           height: 455px;
           padding-top: 180px;
           text-decoration: none;
+          @include pad(){}
+          @include phone(){}
           p {
             text-align: center;
             font-weight: bold;

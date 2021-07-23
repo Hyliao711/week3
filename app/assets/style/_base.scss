@@ -13,6 +13,9 @@
     @include pad(){
       max-width: 690px;
     }
+    @include phone(){
+      max-width: 345px;
+    }
   }
   
   h1, h2, h3, h4, h5, h6 {

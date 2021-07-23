@@ -6,6 +6,9 @@
       padding-top: 40px;
       padding-bottom: 56px;
     }
+    @include phone(){
+      padding-bottom: 40px;
+    }
     h2 {
       text-align: center;
       font-size: $font-2;
@@ -15,11 +18,19 @@
       @include pad(){
         font-size: $font-1*2;
       }
+      @include phone(){
+        font-size: 20px;
+        line-height: 48px;
+        margin-bottom: 20px;
+      }
     }
     .container {
       width: 730px;
       @include pad(){
         max-width: 450px;
+      }
+      @include phone(){
+        max-width: 345px;
       }
     }
     .form {
@@ -29,6 +40,9 @@
         @include pad(){
           font-size: $font-1;
           margin-bottom: 16px;
+        }
+        @include phone(){
+          margin-bottom: 8px;
         }
       }
     }
@@ -72,6 +86,10 @@
           width: 15px;
           height: 15px;
         }
+        @include phone(){
+          width: 17px;
+          height: 17px;
+        }
       }
     }
     .btn-submit {
@@ -89,7 +107,12 @@
         padding: 10px;
         padding-left: 77px;
         padding-right: 77px; 
-        }
+      }
+      @include phone(){
+        padding: 8px;
+        padding-left: 54.5px;
+        padding-right: 54.5px; 
+      }
     }
     .btn-submit:hover {
       background-color: $color2;

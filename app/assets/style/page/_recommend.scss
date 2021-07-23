@@ -15,11 +15,19 @@
         margin-bottom: 32px;
         font-size: $font-1*2;
       }
+      @include phone(){
+        font-size: 20px;
+        line-height: 48px;
+        margin-bottom: 20px;
+      }
     }
     ul {
       justify-content: space-between;
       @include pad(){
         flex-wrap: wrap;
+      }
+      @include phone(){
+        justify-content: center;
       }
       li {
         width: 255px;
@@ -27,6 +35,10 @@
         @include pad(){
           width: 330px;
           margin-bottom: 32px;
+        }
+        @include phone(){
+          width: 100%;
+          margin-bottom: 16px;
         }
         .rec-img {
           display: flex;
