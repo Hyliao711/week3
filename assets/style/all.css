@@ -224,7 +224,8 @@ img {
           margin-bottom: 12px; } }
       @media (max-width: 375px) {
         .footer .mid-footer a {
-          margin-bottom: 6px; } }
+          margin-bottom: 6px;
+          width: 100%; } }
       .footer .mid-footer a img {
         width: 40px;
         margin-right: 20px; }
