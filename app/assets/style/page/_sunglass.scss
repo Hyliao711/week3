@@ -1,4 +1,4 @@
-.optical {
+.sunglass {
     justify-content: space-between;
     li {
         display: block;
@@ -22,15 +22,30 @@
         }
     }
 }
-.optic-banr {
+.sunglass-banr {
     li {
+        max-width: 50%;
         img {
+            width: 960px;
+            height: 304px;
             vertical-align: middle;
         }
     }
+    .sun-banr2 {
+        display: block;
+        width: 960px;
+        height: 304px;
+        background-image: url(/assets/images/product-2-color.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-indent: 101%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
 }
-.optic-main {
+.sunglass-main {
     padding-top: 80px;
+    padding-bottom: 56px;
     text-align: center;
     h2 {
         font-size: 42px;
@@ -44,12 +59,12 @@
         flex-wrap: wrap;
         justify-content: space-between;
         li {
-            width: 23%;
+            width: 32%;
             margin-bottom: 104px;
             a {
                 img {
-                    width: 255px;
-                    height: 164px;
+                    width: 350px;
+                    height: 224px;
                     vertical-align: middle;
                 }
             }
@@ -84,29 +99,3 @@
     }
 }
 
-.pages {
-    margin-bottom: 160px;
-    justify-content: center;
-    align-content: center;
-    li {
-        border: 1px solid #555555;
-        a {
-            display: block;
-            text-align: center;
-            font-size: 18px;
-            color: #000;
-        }
-        a:hover {
-            color: #fff;
-            background-color: #000;
-        }
-        .number {
-            padding: 12px 16px;
-        }
-        .pre, .next {
-            font-size: 19px;
-            line-height: 27px;
-            padding: 12px 12px;
-        }
-    }
-}
