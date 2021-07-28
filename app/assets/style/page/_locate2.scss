@@ -1,0 +1,170 @@
+.locate2 {
+    padding-top: 96px;
+    margin-bottom: 160px;
+    @include pad() {
+        padding-top: 60px;
+        margin-bottom: 96px;    
+    }
+    @include phone() {
+        padding-top: 28px;
+        margin-bottom: 56px;    
+    }
+    h2 {
+        font-size: $font-1*3;
+        line-height: 80px;
+        font-weight: bold;
+        padding-left: 16px;
+        border-left: 8px solid $color;
+        margin-bottom: 65px;
+        @include pad() {
+            margin-bottom: 40px;
+            border-left: 4px solid $color;
+        }
+        @include phone() {
+            font-size: 28px;
+            line-height: 40px;
+            margin-bottom: 24px;
+        }
+    }
+    .select {
+        margin-bottom: 32px;
+        align-items: center;
+        @include pad() {
+            margin-bottom: 24px;
+        }
+        @include phone() {
+            margin-bottom: 20px;
+        }
+        label {
+            font-size: 24px;
+            margin-right: 20px;
+            @include pad() {
+                font-size: $font-1;
+            }
+            @include phone() {
+                font-size: 14px;
+                margin-right: 12px;
+            }
+        }
+        select {
+            width: 324px;
+            font-size: 18px;
+            padding-top: 8px;
+            padding-bottom: 11px;
+            padding-left: 19px;
+            border: 1px solid #CED4DA;
+            border-radius: 5px;
+            @include pad() {
+                font-size: $font-1;
+                padding-top: 10px;
+                padding-bottom: 12px;
+                padding-left: 16px;
+            }
+            @include phone() {
+                width: 277px;
+                font-size: 14px;
+                padding-top: 7px;
+                padding-bottom: 9px;
+                padding-left: 16px;
+            }
+        }
+    }
+    .locate2-box {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .locate2-text {
+            width: 445px;
+            @include pad() {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            @include phone() {
+                flex-direction: column;
+            }
+            img {
+                vertical-align: middle;
+                @include pad() {
+                    width: 330px;
+                    height: 164px;
+                }
+                @include phone() {
+                    width: 100%;
+                }
+            }
+            .box {
+                @include pad() {
+                    display: block;
+                    width: 330px;
+                }
+                @include phone() {
+                    width: 100%;
+                }
+                img {
+                    vertical-align: middle;
+                }
+                h3 {
+                    font-size: 24px;
+                    padding: 12px 24px;
+                    border: 1px solid #00000020;
+                    @include pad() {
+                        font-size: $font-1;
+                        padding: 8px 16px;
+                    }
+                    @include phone() {
+                        padding: 12px 24px;
+                    }
+                }
+                ul {
+                    padding-left: 22px;
+                    padding-top: 16px;
+                    padding-bottom: 8px;
+                    border: 1px solid #00000020;
+                    @include pad() {
+                        padding-left: 26.5px;
+                        padding-top: 19.5px;
+                    }
+                    li {
+                        margin-bottom: 8px;
+                        .flex {
+                            padding-top: 5px;
+                            align-items: flex-start;
+                            @include pad() {
+                                align-items: center;
+                            }
+                            img {
+                                width: 22px;
+                                height: 22px;
+                                margin-right: 11px;
+                            }
+                            @include pad() {
+                                width: 15px;
+                                height: 15px;
+                                margin-right: 10.5px;
+                            }
+                        }
+                        span {
+                            font-size: 20px;
+                            @include pad() {
+                                font-size: 14px;
+                            }
+                        }        
+                    }
+                }
+            }
+        }
+        .locate-map {
+            width: 635px;
+            @include pad() {
+                padding-top: 32px;
+                width: 100%;
+                height: 422px;
+            }
+            @include phone() {
+                padding-top: 16px;
+                height: 211px;
+            }
+        }
+    }
+}
