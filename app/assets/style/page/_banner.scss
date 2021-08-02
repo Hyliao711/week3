@@ -1,22 +1,27 @@
 .banner {
     background: url(../images/banner.png);
     height: 840px;
-    padding-top: 348px;
+
+    // padding-top: 348px;
     @include pad(){
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      padding-top: 372px;
+      // padding-top: 372px;
     }
     @include phone(){
       height: 394px;
       background-size: cover;
-      padding-top: 164px;
+      // padding-top: 164px;
     }
     .banner-text {
       text-align: right;
       color: $color2;
       padding-right: 15px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 100%;
       h2 {
         font-size: $font-3;
         @include pad(){

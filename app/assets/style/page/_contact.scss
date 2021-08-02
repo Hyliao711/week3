@@ -18,6 +18,11 @@
       @include pad(){
         font-size: $font-1*2;
       }
+      @include padtophone(){
+        font-size: 20px;
+        line-height: 48px;
+        margin-bottom: 20px;
+      }
       @include phone(){
         font-size: 20px;
         line-height: 48px;
@@ -29,8 +34,13 @@
       @include pad(){
         max-width: 450px;
       }
+      @include padtophone(){
+        max-width: 100%;
+        padding: 0 15px;
+      }
       @include phone(){
         max-width: 345px;
+        padding: 0;
       }
     }
     .form {

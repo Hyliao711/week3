@@ -5,6 +5,10 @@
         padding-top: 60px;
         margin-bottom: 96px;    
     }
+    @include padtophone() {
+        padding-top: 28px;
+        margin-bottom: 56px;    
+    }
     @include phone() {
         padding-top: 28px;
         margin-bottom: 56px;    
@@ -20,6 +24,11 @@
             margin-bottom: 40px;
             border-left: 4px solid $color;
         }
+        @include padtophone() {
+            font-size: 28px;
+            line-height: 40px;
+            margin-bottom: 24px;  
+        }
         @include phone() {
             font-size: 28px;
             line-height: 40px;
@@ -32,6 +41,9 @@
         @include pad() {
             margin-bottom: 24px;
         }
+        @include padtophone() {
+            margin-bottom: 20px;
+        }
         @include phone() {
             margin-bottom: 20px;
         }
@@ -40,6 +52,10 @@
             margin-right: 20px;
             @include pad() {
                 font-size: $font-1;
+            }
+            @include padtophone() {
+                font-size: 14px;
+                margin-right: 12px;
             }
             @include phone() {
                 font-size: 14px;
@@ -58,6 +74,13 @@
                 font-size: $font-1;
                 padding-top: 10px;
                 padding-bottom: 12px;
+                padding-left: 16px;
+            }
+            @include padtophone() {
+                width: 277px;
+                font-size: 14px;
+                padding-top: 7px;
+                padding-bottom: 9px;
                 padding-left: 16px;
             }
             @include phone() {
@@ -81,14 +104,28 @@
                 width: 330px;
                 margin-bottom: 20px;
             }
+            @include padtophone() {
+                width: 100%;
+                padding: 0 15px;
+                margin-bottom: 16px;
+            }
             @include phone() {
                 width: 100%;
+                padding: 0;
                 margin-bottom: 16px;
 
             }
             img {
                 vertical-align: middle;
                 @include pad() {
+                    width: 350px;
+                    height: 164px;
+                }
+                @include padtophone() {
+                    width: 100%;
+                    height: auto;
+                }
+                @include phone() {
                     width: 350px;
                     height: 164px;
                 }
@@ -156,8 +193,9 @@
         .m-l30 {
             margin-left: 30px;
             @include pad {
-                margin: 0;
+                margin-left: 0;
             }
+
         }
     }
 }

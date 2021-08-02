@@ -32,6 +32,9 @@
       @include pad(){
         margin-bottom: 8px;
       }
+      @include padtophone(){
+        position: relative;
+      }
       @include phone(){
         position: relative;
       }
@@ -39,6 +42,9 @@
         width: 57%;
         @include pad(){
           width: 56.5%;
+        }
+        @include padtophone(){
+          width: 100%;
         }
         @include phone(){
           width: 100%;
@@ -51,6 +57,11 @@
         font-style: italic;
         @include pad(){
           font-size: 28px;
+        }
+        @include padtophone(){
+          position: absolute;
+          width: 100%;
+          text-align: center;
         }
         @include phone(){
           position: absolute;
@@ -110,6 +121,9 @@
         @include pad(){
           width: 37px;
           height: 37px;
+        }
+        @include padtophone(){
+          margin-left: 0px;
         }
         @include phone(){
           margin-left: 0px;

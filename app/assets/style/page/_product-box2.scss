@@ -3,11 +3,16 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 705px;
     padding-top: 60px;
+    padding-bottom: 78px;
     @include pad(){
       height: 452px;
       padding-top: 40px;
+    }
+    @include padtophone(){
+      height: auto;
+      padding-top: 32px;
+      padding-bottom: 40px;
     }
     @include phone(){
       height: 719px;
@@ -36,9 +41,20 @@
         justify-content: center;
         flex-wrap: wrap;
       }
+      @include padtophone(){
+        justify-content: center;
+        flex-wrap: wrap;
+      }
       .p-box1 {
         background-image: url(../images/product-8.png);
+        width: 100%;
+        margin-right: 30px;
         @include phone(){
+          margin-right: 0px;
+          margin-bottom: 16px;
+        }
+        @include padtophone(){
+          margin-right: 0px;
           margin-bottom: 16px;
         }
         a {
@@ -47,7 +63,6 @@
           background-repeat: no-repeat;
           background-size: cover;
           opacity: 1;
-          width: 540px;
           height: 455px;
           padding-top: 180px;
           text-decoration: none;
@@ -59,6 +74,7 @@
             font-size: 72px;
             display: block;
             color: $color;
+
           }
         }
         a:hover {
@@ -67,13 +83,15 @@
       }
       .p-box2 {
         background-image: url(../images/product-9.png);
+        background-position: center;
+        width: 100%;
         a {
           display: block;
           background-color: rgba(255, 255, 255, 0.5);
           background-repeat: no-repeat;
           background-size: cover;
           opacity: 1;
-          width: 540px;
+          // width: 540px;
           height: 455px;
           padding-top: 180px;
           text-decoration: none;

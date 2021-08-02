@@ -11,16 +11,26 @@
     @include pad(){
       max-width: 690px;
     }
+    @include padtophone(){
+      max-width: 100%;
+      flex-direction: column;
+      padding: 0;
+    }
     @include phone(){
       max-width: 375px;
       padding: 0;
       flex-direction: column;
     }
     h1 {
+      @include padtophone(){
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
       @include phone(){
         display: block;
-        width: 100%;
-        padding: 10px 164px;
+        padding-top: 10px;
+        padding-bottom: 10px;
       }
     }
     .logo a {
@@ -40,8 +50,18 @@
     .menu {
       justify-content: space-between;
       flex-wrap: wrap;
+      @include padtophone(){
+        width: 100%;
+      }
       li {
         margin-left: 64px;
+        @include padtophone(){
+          display: block;
+          width: 50%;
+          margin: 0 auto;
+          text-align: center;
+          border: 1px solid #fff;
+        }
         @include phone(){
           width: 50%;
           margin: 0 auto;
@@ -75,12 +95,20 @@
     padding-top: 32px;
     padding-bottom: 21px;
   }
+  @include padtophone(){
+    padding: 0px 15px;
+    padding-top: 24px;
+    padding-bottom: 16px;
+  }
   @include phone(){
     padding: 0px 15px;
     padding-top: 24px;
     padding-bottom: 16px;
   }
   .container {
+    @include padtophone(){
+      position: relative;
+    }
     @include phone(){
       position: relative;
     }
@@ -99,11 +127,18 @@
     @include pad(){
       margin-bottom: 18px;
     }
+    @include padtophone(){
+      position: absolute;
+      right: 0px;
+    }
     @include phone(){
       position: absolute;
       right: 0px;
     }
     .foot-menu {
+      @include padtophone(){
+        display: none;
+      }
       @include phone(){
         display: none;
       }
@@ -137,6 +172,10 @@
     @include pad(){
       margin-bottom: 24px;
     }
+    @include padtophone(){
+      padding-bottom: 24px;
+      margin-bottom: 16px;
+    }
     @include phone(){
       padding-bottom: 24px;
       margin-bottom: 16px;
@@ -150,6 +189,10 @@
       @include pad(){
         margin-bottom: 12px;
       }
+      @include padtophone(){
+        margin-bottom: 6px;
+        width: 100%;
+      }
       @include phone(){
         margin-bottom: 6px;
         width: 100%;
@@ -161,6 +204,9 @@
           width: 20px;
           margin-right: 10px;
         }
+        @include padtophone(){
+          width: 15px;
+        }
         @include phone(){
           width: 15px;
         }
@@ -169,6 +215,10 @@
         font-size: 36px;
         @include pad(){
           font-size: 20px;
+        }
+        @include padtophone(){
+          font-size: $font-1;
+          line-height: 21px;
         }
         @include phone(){
           font-size: $font-1;
@@ -181,6 +231,10 @@
     }
   }
   .end-footer {
+    @include padtophone(){
+      flex-direction: column;
+      align-items: flex-start;
+    }
     @include phone(){
       flex-direction: column;
       align-items: flex-start;
@@ -189,8 +243,14 @@
       @include phone(){
         margin-bottom: 8px;
       }
+      @include padtophone(){
+        margin-bottom: 8px;
+      }
     }
     .service {
+      @include padtophone(){
+        flex-direction: column;
+      }
       @include phone(){
         flex-direction: column;
       }
@@ -199,6 +259,10 @@
         margin-left: 48px;
         @include pad(){
           margin-left: 24px;
+        }
+        @include padtophone(){
+          margin: 0;
+          margin-bottom: 8px;
         }
         @include phone(){
           margin: 0;

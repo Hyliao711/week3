@@ -16,6 +16,10 @@
                 font-size: 24px;
                 padding: 14px;
             }
+            @include padtophone() {
+                font-size: 14px;
+                padding: 6.7px;
+            }
             @include phone() {
                 font-size: 14px;
                 padding: 6.7px;
@@ -27,6 +31,11 @@
                 @include pad() {
                     width: 29.33px;
                     height: 29.33px;
+                }
+                @include padtophone() {
+                    width: 14.66px;
+                    height: 14.66px;
+                    margin-right: 2.7px;
                 }
                 @include phone() {
                     width: 14.66px;
@@ -60,6 +69,9 @@
         @include pad() {
             background-position: 63%;
         }
+        @include padtophone() {
+            height: 148px;
+        }
         @include phone() {
             height: 148px;
         }
@@ -71,6 +83,9 @@
     @include pad() {
         padding-top: 56px;
     }
+    @include padtophone() {
+        padding-top: 32px;
+    }
     @include phone() {
         padding-top: 32px;
     }
@@ -79,6 +94,9 @@
         font-weight: bold;
         @include pad() {
             font-size: $font-1*2;
+        }
+        @include padtophone() {
+            font-size: 20px;
         }
         @include phone() {
             font-size: 20px;
@@ -90,6 +108,10 @@
         @include pad() {
             font-size: 24px;
             margin-bottom: 32px;
+        }
+        @include padtophone() {
+            font-size: $font-1;
+            margin-bottom: 20px;
         }
         @include phone() {
             font-size: $font-1;
@@ -106,8 +128,14 @@
                 width: 330px;
                 margin-bottom: 72px;
             }
+            @include padtophone() {
+                width: 100%;
+                padding: 0 15px;
+                margin-bottom: 32px;
+            }
             @include phone() {
                 width: 100%;
+                padding: 0;
                 margin-bottom: 32px;
             }
             a {
@@ -118,12 +146,20 @@
                     @include pad() {
                         width: 100%;    
                     }
+                    @include padtophone() {
+                        width: 100%;  
+                        height: auto;  
+                    }
+
                 }
             }
             .list-text {
                 justify-content: space-between; 
                 p {
                     font-size: 24px;
+                    @include padtophone() {
+                        font-size: $font-1;
+                    }
                     @include phone() {
                         font-size: $font-1;
                     }
@@ -156,6 +192,9 @@
             }
         }
         .none {
+            @include padtophone() {
+                display: none;
+            }
             @include phone() {
                 display: none;
             }
@@ -196,7 +235,16 @@
                 padding: 10px 12px;
             }
         }
-        .pre, .next {
+        .pre {
+            font-size: 19px;
+            line-height: 27px;
+            padding: 12px 12px;
+            @include phone() {
+                font-size: 17px;
+                padding: 10px 12px;
+            }
+        }
+        .next {
             font-size: 19px;
             line-height: 27px;
             padding: 12px 12px;

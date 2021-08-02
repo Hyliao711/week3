@@ -4,8 +4,20 @@
     }
 }
 
+@mixin smalldesktop{
+    @media (max-width:1024px) {
+        @content
+    }
+}
+
 @mixin pad{
-    @media (max-width:768px) {
+    @media (max-width:1025px) {
+        @content
+    }
+}
+
+@mixin padtophone{
+    @media (max-width:767px) {
         @content
     }
 }
