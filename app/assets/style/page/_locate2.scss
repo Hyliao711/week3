@@ -1,6 +1,10 @@
 .locate2 {
     padding-top: 96px;
     margin-bottom: 160px;
+    @include desktop(){
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     @include pad() {
         padding-top: 60px;
         margin-bottom: 96px;    
@@ -96,7 +100,7 @@
         justify-content: space-between;
         flex-wrap: wrap;
         .locate2-text {
-            width: 445px;
+            width: 40%;
             @include pad() {
                 width: 100%;
                 display: flex;
@@ -194,7 +198,7 @@
             }
         }
         .locate-map {
-            width: 635px;
+            width: 57%;
             @include pad() {
                 padding-top: 32px;
                 width: 100%;

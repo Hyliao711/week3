@@ -4,12 +4,15 @@
   .top-bar {
     justify-content: space-between;
     align-items: center;
-    max-width: 1744px;
+    // max-width: 1744px;
+    padding: 0 68px;
     margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 30px;
     @include pad(){
       max-width: 690px;
+      padding-left: 0;
+      padding-right: 0;
     }
     @include padtophone(){
       max-width: 100%;
@@ -91,6 +94,10 @@
   padding-top: 32px;
   padding-bottom: 39px;
   background-color: $color;
+  @include desktop(){
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   @include pad(){
     padding-top: 32px;
     padding-bottom: 21px;

@@ -1,6 +1,10 @@
 .locate {
     padding-top: 96px;
     margin-bottom: 128px;
+    @include desktop(){
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     @include pad() {
         padding-top: 60px;
         margin-bottom: 96px;    
@@ -94,11 +98,19 @@
     }
     .locate-box {
         flex-wrap: wrap;
-        @include pad() {
+        margin: 0 -15px;
+        @include desktop(){
+            // margin: 0;
+        }
+        @include smalldesktop(){
             justify-content: space-between;
         }
+        @include pad() {
+            margin: 0 0px;
+        }
         .locate-text {
-            width: 350px;
+            width: 33.333%;
+            padding: 0 15px;
             margin-bottom: 32px;
             @include pad() {
                 width: 330px;
@@ -178,24 +190,24 @@
                 text-align: center;
                 background-color: #000;
                 color: #fff;
-                padding: 20px 136px;
+                padding: 20px 0px;
                 font-size: 19px;
                 line-height: 27px;
                 @include pad() {
                     font-size: 14px;
-                    padding: 16px 136px;
+                    padding: 16px 0px;
                 }
             }
             a:hover {
                 opacity: 0.7;
             }
         }
-        .m-l30 {
-            margin-left: 30px;
-            @include pad {
-                margin-left: 0;
-            }
+        // .m-l30 {
+        //     margin-left: 30px;
+        //     @include pad {
+        //         margin-left: 0;
+        //     }
 
-        }
+        // }
     }
 }
