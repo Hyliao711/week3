@@ -93,13 +93,15 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    max-width: 1744px;
+    padding: 0 68px;
     margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 30px; }
     @media (max-width: 1025px) {
       .header .top-bar {
-        max-width: 690px; } }
+        max-width: 690px;
+        padding-left: 0;
+        padding-right: 0; } }
     @media (max-width: 767px) {
       .header .top-bar {
         max-width: 100%;
@@ -179,6 +181,10 @@ a {
   padding-top: 32px;
   padding-bottom: 39px;
   background-color: #AA0601; }
+  @media (max-width: 1280px) {
+    .footer {
+      padding-left: 15px;
+      padding-right: 15px; } }
   @media (max-width: 1025px) {
     .footer {
       padding-top: 32px;
@@ -1443,6 +1449,10 @@ a {
 .locate {
   padding-top: 96px;
   margin-bottom: 128px; }
+  @media (max-width: 1280px) {
+    .locate {
+      padding-left: 15px;
+      padding-right: 15px; } }
   @media (max-width: 1025px) {
     .locate {
       padding-top: 60px;
@@ -1534,14 +1544,19 @@ a {
           padding-left: 16px; } }
   .locate .locate-box {
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-    @media (max-width: 1025px) {
+        flex-wrap: wrap;
+    margin: 0 -15px; }
+    @media (max-width: 1024px) {
       .locate .locate-box {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between; } }
+    @media (max-width: 1025px) {
+      .locate .locate-box {
+        margin: 0 0px; } }
     .locate .locate-box .locate-text {
-      width: 350px;
+      width: 33.333%;
+      padding: 0 15px;
       margin-bottom: 32px; }
       @media (max-width: 1025px) {
         .locate .locate-box .locate-text {
@@ -1613,24 +1628,23 @@ a {
         text-align: center;
         background-color: #000;
         color: #fff;
-        padding: 20px 136px;
+        padding: 20px 0px;
         font-size: 19px;
         line-height: 27px; }
         @media (max-width: 1025px) {
           .locate .locate-box .locate-text a {
             font-size: 14px;
-            padding: 16px 136px; } }
+            padding: 16px 0px; } }
       .locate .locate-box .locate-text a:hover {
         opacity: 0.7; }
-    .locate .locate-box .m-l30 {
-      margin-left: 30px; }
-      @media (max-width: 1025px) {
-        .locate .locate-box .m-l30 {
-          margin-left: 0; } }
 
 .locate2 {
   padding-top: 96px;
   margin-bottom: 160px; }
+  @media (max-width: 1280px) {
+    .locate2 {
+      padding-left: 15px;
+      padding-right: 15px; } }
   @media (max-width: 1025px) {
     .locate2 {
       padding-top: 60px;
@@ -1727,7 +1741,7 @@ a {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
     .locate2 .locate2-box .locate2-text {
-      width: 445px; }
+      width: 40%; }
       @media (max-width: 1025px) {
         .locate2 .locate2-box .locate2-text {
           width: 100%;
@@ -1830,7 +1844,7 @@ a {
               .locate2 .locate2-box .locate2-text .box ul li span {
                 font-size: 14px; } }
     .locate2 .locate2-box .locate-map {
-      width: 635px; }
+      width: 57%; }
       @media (max-width: 1025px) {
         .locate2 .locate2-box .locate-map {
           padding-top: 32px;
